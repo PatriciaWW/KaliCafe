@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kali Cafe</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        nav{
+            padding:20px;
+            position: fixed;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            gap: 42px;
+            background: white;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
+        }
+        .navbar{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        #nav-links{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: centre; 
+            align-items: center;
+
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Makes the element a perfect circle */
+            overflow: hidden; /* Ensures the content stays within the circle */
+            display: flex; /* Optional: Center-aligns inner content */
+            justify-content: center; /* Optional: Centers content horizontally */
+            align-items: center;
+        }
+        .logo img{
+            width: 100%; /* Ensures the image scales to fit the circle */
+            height: 100%; /* Ensures the image scales to fit the circle */
+            object-fit: cover; 
+        }
+        .navbar a{
+            text-decoration: none; /* Removes the underline */
+            color: black;
+
+        }
+        .home{
+            width: 100%;
+            height: 100vh;
+            background-image: url(images/pastry1.avif);
+            background-size: cover; /* Ensures the image covers the container */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; 
+            margin: 0; 
+            padding: 0;
+            
+        }
+        .welcome{
+            z-index: 1;
+        }
+        #about{
+
+        }
+        .drinkimage{
+            width: 80px;
+            height: 80px;
+
+        }
+        #menu-card{
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;        
+        }
+    </style>
+</head>
+<body>
+    <section id="home" >
+        <nav class="navbar" >
+            <div class="navbar">
+                <a href="#home" class="logo" >
+                    <img src="images/kali_logo.avif" alt="Logo" />
+                </a>
+                <div id="navbar-default">
+                    <ul id="nav-links" >
+                        <li>
+                            <a href="#" >HOME</a>
+                        </li>
+                        <li>
+                            <a href="#menu">MENU</a>
+                        </li>
+                        <li>
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#contact">CONTACT US</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="home">
+            <div class="welcome">
+                <h1 style="color: #f0ad4e;">WELCOME TO KALI CAFE</h1>
+                <p style="color: #f0ad4e;">A cozy café serving handcrafted coffee and fresh pastries in a warm, inviting atmosphere.</p>
+
+
+            </div>
+        </div>
+        
+    </section>
+    <section id="about">
+        <h1>About Us</h1>
+        <p>Welcome to Kali Cafe, where every visit feels like home. We’re your go-to spot for fresh coffee, artisan pastries, and meals crafted with care.
+
+            Nestled in the heart of Westlands, we’re passionate about creating moments that matter — whether it’s your morning coffee, a cozy brunch, or a quiet escape.
+            
+            With locally sourced ingredients and a warm, inviting atmosphere, Kali Cafe is more than a cafe; it’s your home away from home. Come for the flavors, stay for the memories!</p>
+
+    </section>
+    <section id="menu">
+        <div id="drinks">
+            <div id="menu-card">
+                <img src="images/americano.jpg" alt="" class="drinkimage">
+                <p>Americano</p>
+                <p>Ksh. 1050</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/latte.jpg" alt="" class="drinkimage">
+                <p>Latte</p>
+                <p>Ksh. 850</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/cappuccino.jpg" alt="" class="drinkimage">
+                <p>Cappuccino</p>
+                <p>Ksh. 1250</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/matcha.jpg" alt="" class="drinkimage">
+                <p>Matcha</p>
+                <p>Ksh. 1350</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/blackcoffee.webp" alt="" class="drinkimage">
+                <p>Blackcoffee</p>
+                <p>Ksh. 650</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/americano.jpg" alt="" class="drinkimage">
+                <p>Americano</p>
+                <p>Ksh. 650</p>
+            </div>
+
+
+        </div>
+        <div id="pastry">
+            <div id="menu-card">
+                <img src="images/cinnamonrolls.avif" alt="" class="drinkimage">
+                <p>Cinnamon rolls</p>
+                <p>Ksh.500 per piece</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/cookies.avif" alt="" class="drinkimage">
+                <p>Cookies</p>
+                <p>Ksh.600 per packet </p>
+            </div>
+            <div id="menu-card">
+                <img src="images/doughnut.avif" alt="" class="drinkimage">
+                <p>Doughnut</p>
+                <p>Ksh.400 per piece</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/frnchpastry.avif" alt="" class="drinkimage">
+                <p>French Pastry</p>
+                <p>Ksh. 350 per piece</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/fruitypie.avif" alt="" class="drinkimage">
+                <p>Fruit Pies</p>
+                <p>Ksh. 500 per slice</p>
+            </div>
+            <div id="menu-card">
+                <img src="images/samoonbread.avif" alt="" class="drinkimage">
+                <p>Sammon Bread</p>
+                <p>Ksh. 380 per piece</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+    
+</body>
+</html>
