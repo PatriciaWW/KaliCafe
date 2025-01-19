@@ -149,6 +149,101 @@
                 font-size: 14px;
             }
         }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer .footer-content {
+            display: flex;
+            justify-content: space-between; /* Distribute sections */
+            width: 100%;
+            gap: 20px;
+        }
+
+        footer .footer-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            width: 30%; /* Control width */
+        }
+
+        footer .footer-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%; /* Control width */
+            text-align: center;
+        }
+
+        footer .footer-bottom {
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        footer .footer-bottom p {
+            margin: 0;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #f0ad4e;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        #contact h1 {
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        #contact a {
+            color: #f0ad4e;
+        }
+
+        /* Social Media Section */
+        .social-media {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            font-size: 20px;
+        }
+
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -273,14 +368,37 @@
     </section>
 
     <section id="contact">
+        <h1>Contact Us</h1>
+        <p>Email: <a href="mailto:contact@kalicafe.com" style="color: #f0ad4e;">contact@kalicafe.com</a></p>
+        <p>Phone: <a href="tel:+273734567890" style="color: #f0ad4e;">+273 734 567 890</a></p>
 
     </section>
 
     <footer>
-
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:contact@kalicafe.com" style="color: #f0ad4e;">contact@kalicafe.com</a></p>
+                <p>Phone: <a href="tel:+273734567890" style="color: #f0ad4e;">+273 734 567 890</a></p>
+            </div>
+            <div class="footer-center">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/KaliCafe" target="_blank">
+                    <img src="images/facebook-logo.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/KaliCafe" target="_blank">
+                    <img src="images/instagram-logo.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com/KaliCafe" target="_blank">
+                    <img src="images/twitter-logo.png" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Kali Cafe. All rights reserved.</p>
+        </div>
     </footer>
-
-
-    
+  
 </body>
 </html>
