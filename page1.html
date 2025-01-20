@@ -10,22 +10,19 @@
             padding: 0;
             font-family: Arial, sans-serif;
             box-sizing: border-box;
-
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;       
         }
         nav{
-            padding:20px;
+            padding: 20px;
             position: fixed;
-            
             top: 0;
             left: 0;
             width: 100%;
-            gap: 42px;
             background: white;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-
+            z-index: 10; 
         }
         .navbar{
             align-items: center;
@@ -69,10 +66,26 @@
             background-position: center; 
             margin: 0; 
             padding: 0;
+            padding-top: 80px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
             
         }
         .welcome{
-            z-index: 1;
+            z-index: 2; 
+            padding: 20px;
+            text-align: center;
+            color: #f0ad4e;
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 10px;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .welcome h1, .welcome p {
+            margin: 0;
+            font-size: 2rem;
+            color: #f0ad4e; 
         }
         #about{
             font-size: large;
@@ -143,6 +156,36 @@
                 font-size: 14px;
             }
         }
+        .contact-content {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;   
+        }
+
+        .contact-content h1 {
+            font-size: 2rem;
+            color: #f0ad4e;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .contact-content a {
+            color: #f0ad4e;
+            text-decoration: none;
+        }
+
+        .contact-content a:hover {
+            text-decoration: underline;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -154,6 +197,7 @@
             flex-direction: column; 
             align-items: center;
             box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
         }
 
         footer .footer-content {
@@ -392,11 +436,13 @@
     </section>
 
     <section id="contact">
-        <h1>Contact Us</h1>
-        <p>Email: <a href="mailto:contact@kalicafe.com" style="color: #f0ad4e;">contact@kalicafe.com</a></p>
-        <p>Phone: <a href="tel:+273734567890" style="color: #f0ad4e;">+273 734 567 890</a></p>
-
+        <div class="contact-content">
+            <h1>Contact Us</h1>
+            <p>Email: <a href="mailto:contact@kalicafe.com" style="color: #f0ad4e;">contact@kalicafe.com</a></p>
+            <p>Phone: <a href="tel:+273734567890" style="color: #f0ad4e;">+273 734 567 890</a></p>
+        </div>
     </section>
+    
 
     <footer>
         <div class="footer-content">
